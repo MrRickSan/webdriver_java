@@ -19,6 +19,9 @@ public class BaseTests {
         driver.manage().window().maximize();
 
         System.out.println(driver.getTitle());
+
+        // closes the browser and ends the session.
+        // p.s. close() closes the window but not necessarily the entire session.
         driver.quit();
     }
 
