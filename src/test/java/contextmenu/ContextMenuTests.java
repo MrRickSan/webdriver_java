@@ -9,7 +9,7 @@ public class ContextMenuTests extends BaseTests {
 
     @Test
     public void testRightClick() {
-        var contextMenuPage = homePage.clickContextMenuPage();
+        var contextMenuPage = homePage.clickContextMenu();
 
         contextMenuPage.triggerContextMenu();
         assertEquals(contextMenuPage.alert_getText(), "You selected a context menu",

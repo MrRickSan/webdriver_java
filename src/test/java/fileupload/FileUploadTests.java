@@ -9,7 +9,7 @@ public class FileUploadTests extends BaseTests {
 
     @Test
     public void testUploadFile() {
-        var fileUploadPage = homePage.clickFileUploadPage();
+        var fileUploadPage = homePage.clickFileUpload();
         fileUploadPage.uploadFile("/Users/mrricksan/code/java/webdriver_java/resources/chromedriver");
         assertEquals(fileUploadPage.getUploadedFiles(), "chromedriver", "Uploaded file incorrect");
     }

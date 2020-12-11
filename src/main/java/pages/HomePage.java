@@ -46,19 +46,24 @@ public class HomePage {
         return new AlertsPage(driver);
     }
 
-    public FileUploadPage clickFileUploadPage() {
+    public FileUploadPage clickFileUpload() {
         clickLink("File Upload");
         return new FileUploadPage(driver);
     }
 
-    public ContextMenuPage clickContextMenuPage() {
+    public ContextMenuPage clickContextMenu() {
         clickLink("Context Menu");
         return new ContextMenuPage(driver);
     }
 
-    public WysiwygEditorPage clickWysiwygEditorPage() {
+    public WysiwygEditorPage clickWysiwygEditor() {
         clickLink("WYSIWYG Editor");
         return new WysiwygEditorPage(driver);
+    }
+
+    public FramesPage clickFrames() {
+        clickLink("Frames");
+        return new FramesPage(driver);
     }
 
     private void clickLink(String text) {
