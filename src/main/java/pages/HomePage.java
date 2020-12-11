@@ -41,6 +41,21 @@ public class HomePage {
         return new HorizontalSliderPage(driver);
     }
 
+    public AlertsPage clickJavaScriptAlerts() {
+        clickLink("JavaScript Alerts");
+        return new AlertsPage(driver);
+    }
+
+    public FileUploadPage clickFileUploadPage() {
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+
+    public ContextMenuPage clickContextMenuPage() {
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
+
     private void clickLink(String text) {
         driver.findElement(By.linkText(text)).click();
     }
